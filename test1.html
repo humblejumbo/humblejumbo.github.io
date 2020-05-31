@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="test1.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Pure CSS Accordion</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-
-<div id="acoordion-2">
-
-  <h2>Acoordion II</h2>
-  <h5>Can select only one item at once.</h5>
-  <div id="nestle-section">
-    <input type="radio" id="tab1" name="tabs" checked="" />
-    <label for="tab1">Item1</label>
-    <div class="tab-content1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+<!-- partial:index.partial.html -->
+<div class="row">
+  <div class="col">
+    <h2>Can open any no. of items</h2>
+    <div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1">Item 1</label>
+        <div class="tab-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2">Item 2</label>
+        <div class="tab-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+        </div>
+      </div>
     </div>
- 
-    <input type="radio" id="tab2" name="tabs"/>
-    <label for="tab2">Item2</label>
-    <div class="tab-content1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-    </div>
-
-    <input type="radio" id="tab3" name="tabs"/>
-    <label for="tab3">Item3</label>
-    <div class="tab-content1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-    </div>
-
   </div>
-
+  <div class="col">
+    <h2>Can open only one item at a time</b></h2>
+    <div class="tabs">
+      <div class="tab">
+        <input type="radio" id="rd1" name="rd">
+        <label class="tab-label" for="rd1">Item 1</label>
+        <div class="tab-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd2" name="rd">
+        <label class="tab-label" for="rd2">Item 2</label>
+        <div class="tab-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
+<!-- partial -->
+  
 </body>
 </html>
