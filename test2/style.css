@@ -1,0 +1,110 @@
+body
+{
+	font-family: 'Roboto', sans-serif;
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*----Styling for "To Do List" Heading -------------*/
+#heading
+{
+	position: absolute;
+	top: 20%;
+	left: 45%;
+	color: #e5f6fc;
+    border-bottom: 2px solid #e5f6fc;
+}
+
+
+/*---Stylining for main container-----------*/
+.container
+{
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	width: 360px;
+	height: auto;
+	background: #f7f7f7;
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.3);
+}
+
+/*------input field container-----*/
+#item-input
+{
+	position: relative;
+}
+
+/*----Styling for input field-----*/
+#item-input-field
+{
+	height: 30px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Sriracha';
+    background: #e3f024;
+    width: 100%;
+    padding: 13px 0px 13px 11px;
+    color: #2980b9;
+    border: rgba(0,0,0,0.1);
+}
+
+/*---Add button----*/
+.add i
+{
+	position: absolute;
+	right: 1%;
+	top: 30%;
+}
+
+/*---Styling for list(ul)--------*/
+#item-list
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+#item-list li
+{
+	position: relative;
+	background: #fff;
+	line-height: 40px;
+	font-family: 'Montserrat', sans-serif;
+	color: #666;
+}
+
+#item-list li:nth-of-type(2n)
+{
+	background: #f7f7f7;
+}
+
+input[type="checkbox"]
+{
+	margin-right: 10px;
+}
+
+/*----- delete button----*/
+.delete 
+{
+	position: absolute;
+	right: 1%;
+}
+
+/*---task left container--------*/
+#counter
+{
+	position: relative;
+	height: 40px;
+	background-color: #a0cbbc;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 16px;
+}
+
+#counter-span-1
+{
+	margin-left: 5px;
+}
+
