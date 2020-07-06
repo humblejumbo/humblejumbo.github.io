@@ -1,0 +1,40 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-image: url(images/home-background.jpg);
+	background-size: cover;
+}
+
+.heading
+{
+	font-size: 50px;
+	font-family: 'Comic Neue', cursive;
+	color: white;
+}
+
+form
+{
+	position: absolute;
+    left: 40%;
+    margin-top: 10px;
+}
+
+.fav-page-btn
+{
+	float: right !important;
+	margin-top: 10px;
+}
+
+#search-results
+{
+	margin-top: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
