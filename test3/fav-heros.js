@@ -7,7 +7,6 @@
 	{
 		let searchResultsContainer=document.getElementById("search-results");
 		searchResultsContainer.innerHTML="";
-		console.log(localStorage.length);
 
 		if(localStorage.length==0)
 		{
@@ -16,10 +15,9 @@
 
 		for(let i=0;i<localStorage.length;i++)
 		{
-			console.log(JSON.parse(localStorage.getItem(i)));
 			let obj=JSON.parse(localStorage.getItem(i));
 
-			if(obj==null)
+			if(obj==null || obj==undefined ||obj==NaN)
 				continue;
 
 			searchResultsContainer.innerHTML+=`<div class="thumbnail">
@@ -42,13 +40,10 @@
 		for(let j=0;j<elements.length;j++)
 		{
 			let obj=JSON.parse(localStorage.getItem(j));
-			console.log(elements.length);
-			console.log(obj);
 
 			elements[j].onclick=function()
 			{
 				localStorage.removeItem(j);
-				console.log(localStorage.length);
 				renderFavourites();
 			}
 

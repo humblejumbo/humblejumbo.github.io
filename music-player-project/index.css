@@ -1,0 +1,739 @@
+html
+{
+	margin: 0;
+}
+
+/*APPLYING LINEAR GRADIENT AND COMFORTA FONT FAMILY ON BODY*/
+body
+{
+	margin: 0;
+	background-image: linear-gradient(to right,#acb6e5,#86fde8);
+	font-family: Comfortaa;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+
+
+/*STYLING ON NAVIGATION BAR*/
+nav
+{
+	width: 100%;
+	background-color: #252d42;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-left, .nav-right
+{
+	display: inline-block;
+}
+
+.horizontal-list
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.horizontal-list li
+{
+	margin: 0 25px;
+	font-size: 16px;
+	font-family: Comfortaa;
+
+}
+
+.horizontal-list a
+{
+	text-decoration: none;
+	color: #f5f5f6;
+	display: block;
+	padding: 9px 0px;
+}
+
+#logo
+{
+	font-size: 28px;
+	font-family: Sriracha;
+	font-weight: bold;
+}
+
+#search
+{
+	border-radius: 12px;
+	font-size: 1em;
+	padding: 0 10px;
+}
+
+#search-btn
+{
+	border-radius: 5px;
+	margin-left: -5px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/*STYLING ON MAIN SECTION BEGINS*/
+main 
+{
+    position: relative;
+    margin: 24px 0 24px 16px;
+    display: inline-block;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*SECTION HEADING STYLING THAT WILL BE COMMON AMONG ALL SECTIONS*/
+.section-heading h1
+{
+	padding: 20px 5px 0px;
+    font-weight: 700;
+    color: #f5f5f6;
+    font-size: 30px;
+}
+
+/*FLEX FOR SECTION HEADING AND CONTENT*/
+.section-flex
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*PROVIDING FLEX PROPERTY TO OUTER LAYER OF THE CONTENT OF ALL SECTIONS*/
+.flex-display
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+
+/*STYLING ON CAROUSEL SECTION*/
+#carousel-display
+{
+	height: 250px;
+}
+
+.carousel-images
+{
+	height: 200px;
+	width: 200px;
+	border-radius: 4px;
+	background-size: cover;
+	transition: all 1s ease-in-out;
+}
+
+/*CAROUSEL IMAGES*/
+#carousel-image-1
+{
+	background-image:url(images/pop-banner.jpg);
+}
+
+#carousel-image-2
+{
+	background-image:url(images/afro-banner.jpg);
+}
+
+#carousel-image-3
+{
+	background-image:url(images/mtv-banner.png);
+}
+
+
+/*WHENEVER HOVERED ON CAROUSEL IMAGE, IT BECOMES BECOMES BIGGER AND
+ BRIGHTNESS OF REST OF THE IMAGES DIMINISHES.*/
+#carousel-display:hover > .carousel-images
+{
+	filter:brightness(0.8);
+}
+
+#carousel-display:hover > .carousel-images:hover
+{
+	transform: scale(1.1);
+	filter: brightness(1);
+	z-index: 1;
+	cursor: pointer;
+}
+
+
+/*LATEST RELEASE SECTION BEGINS*/
+#latest-release-display
+{
+	height: 400px;
+}
+
+
+/*CONTAINER CLASS FOR EACH LATEST RELEASE SONG*/
+.latest-rel-container
+{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+
+
+/*LATEST REL SONG IMAGE'S BRIGHTNESS DIMINISHES WHEN HOVERED*/
+.latest-rel-song-image
+{
+	height: 150px;
+	width: 150px;
+	min-width: 120px;
+	border-radius: 4px;
+	filter:brightness(1);
+	background-size: cover;
+	transition: all 1s linear;
+}
+
+.latest-rel-song-image:hover
+{
+	filter: brightness(0.8);
+	cursor: pointer;
+}
+
+.latest-rel-song-details
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/*SONG DURATION AND DROPDOWN MENU(STYLING PRESENT IN ASIDE SECTION) FOR SONG*/
+.option-and-duration
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.duration
+{
+	align-self: center;
+}
+
+
+/*LATEST RELEASE SONG IMAGES*/
+#latest-rel-song-1
+{
+	background-image: url(images/closer.jpg);
+}
+
+#latest-rel-song-2
+{
+	background-image: url(images/sorry.jpg);
+}
+
+#latest-rel-song-3
+{
+	background-image: url(images/ms-dhoni.jpg);
+}
+
+#latest-rel-song-4
+{
+	background-image: url(images/ae-dil-hai-mushkil.jpg);
+}
+
+
+/*STYLING ON POPULAR ARTISTS*/
+.artist
+{
+	text-align: center;
+}
+
+#artist-display
+{
+	height: 200px;
+}
+
+.artist-images
+{
+	position: relative;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background-size: cover;
+	filter: brightness(1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 1s linear;
+}
+
+
+/*PLAY BUTTON APPEARS WHEN HVERED ON ARTISTS IMAGES, WITH BRIGHTNESS OF
+ARTIST IMAGE DIMINISHES */
+.play{
+  
+	position: absolute;
+	top: 39%;
+    left: 36%;
+    color: black;
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s linear;
+}
+
+.play i
+{
+	font-size: xx-large;
+} 
+
+.artist-images:hover
+{
+	filter: brightness(0.7);
+	cursor: pointer;
+}
+.artist-images:hover .play
+{
+	opacity: 1;
+}
+
+
+/*POPULAR ARTISTS IMAGES*/
+#artist-image1
+{
+	background-image: url(images/charlie.jpg);
+}
+
+#artist-image2
+{
+	background-image: url(images/arijit.jpg);
+}
+
+#artist-image3
+{
+	background-image: url(images/kk.jpg);
+}
+
+#artist-image4
+{
+	background-image: url(images/ed.jpg);
+}
+
+#artist-image5
+{
+	background-image: url(images/hardy.jpg);
+}
+
+
+/*STYLING ON MOOD SECTIONS*/
+#mood-display
+{
+	height: 550px;
+}
+
+/*ALL MOOD IMAGES ARE SET TO 0.8 BRIGHTNESS, WHEN HOVERED OVER IT GROWS IN 
+SIZE & BRIGHTNESS*/
+.mood-images
+{
+	height: 200px;
+	width: 300px;
+	background-size: cover;
+	border-radius: 4px;
+	filter:brightness(0.8);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 1s ease-in-out;
+}
+
+.mood-images:hover
+{
+	transform: scale(1.1);
+	filter: brightness(1);
+	z-index: 1;
+	cursor: pointer;
+}
+
+#mood-image1
+{
+	background-image: url("images/mood-booster.jpg");
+}
+
+#mood-image2
+{
+	background-image: url("images/feeling-good.jpg");
+}
+
+#mood-image3
+{
+	background-image: url("images/alone-again.jpg");
+}
+
+#mood-image4
+{
+	background-image: url("images/romantic-acoustics.jpg");
+}
+
+#mood-image5
+{
+	background-image: url("images/alone-again.jpg");
+}
+
+#mood-image6
+{
+	background-image: url("images/coffee-piano.jpg");
+}
+
+
+
+/*THESE TWO CLASSES WILL REMAIN COMMON IN LATEST ENGLISH AND
+LATEST HINDI SONGS*/
+.lat-display
+{
+	height: 200px;
+}
+
+
+/*BRIGHTNESS OF IMAGES WILL BE REDUCED WHEN HOVERED OVER*/
+.lat-images
+{
+	height: 150px;
+	width: 150px;
+	border-radius: 4px;
+	filter:brightness(1);
+	background-size: cover;
+	transition: all 1s linear;
+}
+
+.lat-images:hover
+{
+	filter: brightness(0.8);
+	cursor: pointer;
+}
+
+.latest-album-name
+{
+	font-size: small;
+}
+
+#lat-eng-image-1
+{
+	background-image: url(images/girls-like-you.jpg);
+}
+
+#lat-eng-image-2
+{
+	background-image: url(images/closer.jpg);
+}
+
+#lat-eng-image-3
+{
+	background-image: url(images/sorry.jpg);
+}
+
+#lat-hin-image-1
+{
+	background-image: url(images/ms-dhoni.jpg);
+}
+
+#lat-hin-image-2
+{
+	background-image: url(images/ae-dil-hai-mushkil.jpg);
+}
+
+
+/*Aside(queue) Section*/
+
+aside {
+   	position: fixed;
+    top: 10%; 
+    display: inline-block;
+    width: 21%;
+    vertical-align: top;
+    margin: 30px auto;
+    height: 100vh;
+    background-color: #252d42;
+    right: 0px;
+}
+
+
+.queue-heading
+{
+	padding: 20px 5px 0px;
+    font-weight: 700;
+    color: #f5f5f6;
+    font-size: 15px;
+    width: 30%;
+}
+
+/*STYLING FOR DROPDOWN WHICH WILL BE COMMON IN QUEUE AND 
+LATEST RELEASE*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  color: black;
+  background-color: #f9f9f9;
+  font-size: 12px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  position: absolute;
+  left: -150px;
+  top:10px;
+  padding: 2px;
+  width: 150px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p{
+	padding: 10px 0;
+	margin: 0;
+}
+
+.dropdown-content p:hover {
+  background-color: #f1f1f1;
+}
+
+#queue-container
+{
+	display: flex;
+	flex-direction: column;
+	color: #f5f5f6;
+	align-content: space-around;
+}
+
+.song-container-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.song-container
+{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.song-name,.song-id
+{
+	font-size: 15px;
+	padding-left: 13px;
+	align-self: center;
+}
+
+.song-id
+{
+	margin-right: 20px;
+}
+
+.song-images
+{
+	height: 60px;
+	width: 60px;
+	min-width: 60px;
+	border-radius: 4px;
+}
+
+.song-name
+{
+	margin: 0 auto;
+}
+
+#song-image1
+{
+	background-image: url(images/attention.jpg);
+}
+
+#song-image2
+{
+	background-image: url(images/let-me-love.jpg);
+}
+
+#song-image3
+{
+	background-image: url(images/see-you-again.jpg);
+}
+
+.fav-icon
+{
+	align-self: center;
+	margin-left: auto;
+    margin-right: 20px;
+}
+
+/*HEART ICON WILL BECOME RED WHEN HOVERED OVER*/
+i.fa-heart
+{
+	cursor: pointer;
+}
+
+i.fa-heart:hover
+{
+	color: red;
+}
+
+.horizontal-line
+{
+	border-bottom: 0.5px solid #f5f5f6;
+	opacity: 0.3;
+	width: 90%;
+	margin: 15px 0;
+	align-self: center;
+}
+
+
+/*STYLING ON MUSIC PLAYER*/
+#music-player-container
+{
+	padding-bottom: 100px;
+
+}
+#music-player-container audio
+{
+	position: fixed;
+	width: 70%;
+	opacity: 0.7;	
+	bottom: 2%;
+	z-index: 100;
+
+}
+
+/*SIZE OF MOOD, ARTIST AND CAROUSEL IMAGES WILL DECREASE WHEN 
+1320PX WIDTH IS HIT*/
+@media only screen and (max-width:  1320px)
+{
+	.mood-images,.artist-images,
+	.carousel-images
+	{
+		transform: scale(0.8);
+	}
+
+	.mood-images:hover
+	{
+		transform: scale(0.9);
+	}
+
+	#carousel-display:hover > .carousel-images:hover
+	{
+		transform: scale(0.9);
+	}
+
+}
+
+
+/*COMPONENTS OF NAVBAR AND LATEST RELEASE WILL BECOME SMALL WHEN WE HIT 1290PX*/
+@media only screen and (max-width:  1290px)
+{
+
+	.horizontal-list
+	{
+		height: 50px;
+	}
+
+	.horizontal-list li
+	{
+		margin:0 10px;
+		font-size: 10px;
+	}
+
+	#logo
+	{
+		font-size: 20px;
+	}
+
+	main
+	{
+		width: 60%;
+		margin-left: 25px;
+	}
+
+	.latest-rel-song-image
+	{
+		transform: scale(0.8);
+	}
+
+}
+
+
+/*FAV ICON WILL DISAPPEAR AND FONT OF SONGS NAME WILL BECOME SMALL AT 1130PX*/
+@media only screen and (max-width: 1130px)
+{
+	#queue .fav-icon
+	{
+		display: none;
+	}
+
+	#queue .song-name
+	{
+		font-size: 12px;
+	}
+}
+
+
+/*HEIGHT WILL BE SET TO AUTO, WHICH WILL HELP TO DISPLAY ONE IMAGE AT A SCREEN.*/
+@media only screen and (max-width: 1050px)
+{
+
+	#mood-display,#artist-display,
+	#carousel-display,#latest-release-display
+	{
+		height: auto;
+	}
+
+	.mood-images
+	{
+		width: 400px;
+		height: 267px;
+		background-size: cover;
+	}
+
+	.latest-rel-container
+	{
+		width: 100%;
+	}
+}
+
+/*SEARCH FIELD ON NAVBAR AND SONG IMAGES FROM QUEUE DISAPPEARS, ALSO FONT SIZE OF SOME ELEMENTS WILL DECREASE*/
+@media only screen and (max-width: 768px)
+{
+	
+	#search-bar
+	{
+		display: none;
+	}
+
+	#queue .song-images
+	{
+		display: none;
+	}
+
+	.horizontal-list li
+	{
+		font-size: 8px;
+	}
+
+	#logo
+	{
+		font-size: 15px;
+	}
+
+}
+

@@ -40,7 +40,6 @@
 			let data=JSON.parse(xhrRequest.responseText);
 
 			let powerStatsContainer=document.getElementById('powerstats');
-			console.log(powerStatsContainer);
 
 			powerStatsContainer.innerHTML+=`<p>Intelligence: ${data.intelligence}</p>
 											<p>Strength: ${data.strength}</p>
@@ -63,7 +62,6 @@
 			let data=JSON.parse(xhrRequest.responseText);
 
 			let biographyContainer=document.getElementById('biography');
-			console.log(biographyContainer);
 
 			biographyContainer.innerHTML+=`<p>Full Name: ${data['full-name']}</p>
 										   <p>Place of Birth: ${data['place-of-birth']}</p>

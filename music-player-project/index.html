@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MixTape Studio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- LINKS TO FONT AWESOME AND GOOGLE FONT -->
+	<script src="https://kit.fontawesome.com/babfe5cbb1.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Sriracha&display=swap" rel="stylesheet">
+
+	<!-- MAIN STYLESHEET -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header id="body-header">
+
+		<!-- NAVIGATION BAR -->
+		<nav>
+			<div class="nav-left">
+				<ul class="horizontal-list">
+					<li id="logo"><a href="#">MixTape Studio</a></li>
+					<li><a href="#">My Favourites</a></li>
+					<li><a href="#">Genres</a></li>
+					<li><a href="#">Radio</a></li>
+					<li><a href="#">Shows & Podcasts</a></li>
+				</ul>
+			</div>
+			
+			<div class="nav-right">
+				<ul class="horizontal-list">
+					<li id="search-bar">
+						<input type="text" id="search" placeholder="search">
+						<button id="search-btn"><i class="fas fa-search"></i></button>
+					</li>
+					<li id="notfn-bell"><a href="#"><i class="fas fa-bell"></i></a></li>
+					<li id="profile"><a href="#">
+						<img src="images/profile-img.jpeg" alt="Avatar" class="avatar">
+					</a></li>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+
+<!-- MAIN SECTION OF BODY BEGINS -->
+	<main>
+
+		<!-- CAROUSEL -->
+		<section id="carousel">
+
+			<div class="flex-display" id="carousel-display">
+				
+				<div class="carousel-images" id="carousel-image-1"></div>
+				<div class="carousel-images" id="carousel-image-2"></div>
+				<div class="carousel-images" id="carousel-image-3"></div>
+
+			</div>
+			
+
+		</section>
+
+
+		<!-- LATEST RELEASE SECTION -->
+		<section id="latest-release" class="section-flex">
+
+			<div class="section-heading">
+				<h1>Latest Release</h1>
+			</div>
+
+			<div class="flex-display" id="latest-release-display">
+
+
+				<div class="latest-rel-container">
+
+					<div class="latest-rel-song-image" id="latest-rel-song-1"></div>
+					<div class="latest-rel-song-details">
+						<div class="latest-rel-song-name">Closer</div>
+						<div class="latest-rel-song-date">APR 4, 2020</div>
+					</div>
+					<div class="option-and-duration">
+						<!-- DROPDOWN OF LATEST RELEASE SONG -->
+						<div class="queue-heading dropdown">
+							<h1><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></h1>
+							<div class="dropdown-content">
+				  				<p><i class="fa fa-play" aria-hidden="true"></i> &nbsp; Play Now</p>
+				  				<p><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add to Queue</p>
+				  			</div>
+						</div>
+						<div class="duration">4:30</div>
+					</div>	
+				</div>
+
+
+				<div class="latest-rel-container">
+
+					<div class="latest-rel-song-image" id="latest-rel-song-2"></div>
+					<div class="latest-rel-song-details">
+						<div class="latest-rel-song-name">Sorry</div>
+						<div class="latest-rel-song-date">APR 4, 2020</div>
+					</div>
+					<div class="option-and-duration">
+						<div class="queue-heading dropdown">
+							<h1><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></h1>
+							<div class="dropdown-content">
+				  				<p><i class="fa fa-play" aria-hidden="true"></i> &nbsp; Play Now</p>
+				  				<p><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add to Queue</p>
+				  			</div>
+						</div>
+						<div class="duration">4:30</div>
+					</div>	
+				</div>
+
+
+				<div class="latest-rel-container">
+
+					<div class="latest-rel-song-image" id="latest-rel-song-3"></div>
+					<div class="latest-rel-song-details">
+						<div class="latest-rel-song-name">Kaun Tujhe</div>
+						<div class="latest-rel-song-date">APR 4, 2020</div>
+					</div>
+					<div class="option-and-duration">
+						<div class="queue-heading dropdown">
+							<h1><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></h1>
+							<div class="dropdown-content">
+				  				<p><i class="fa fa-play" aria-hidden="true"></i> &nbsp; Play Now</p>
+				  				<p><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add to Queue</p>
+				  			</div>
+						</div>
+						<div class="duration">4:30</div>
+					</div>	
+				</div>
+
+
+
+				<div class="latest-rel-container">
+
+					<div class="latest-rel-song-image" id="latest-rel-song-4"></div>
+					<div class="latest-rel-song-details">
+						<div class="latest-rel-song-name">Ae Dil hai Mushkil</div>
+						<div class="latest-rel-song-date">APR 4, 2020</div>
+					</div>
+					<div class="option-and-duration">
+						<div class="queue-heading dropdown">
+							<h1><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></h1>
+							<div class="dropdown-content">
+				  				<p><i class="fa fa-play" aria-hidden="true"></i> &nbsp; Play Now</p>
+				  				<p><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add to Queue</p>
+				  			</div>
+						</div>
+						<div class="duration">4:30</div>
+					</div>	
+				</div>
+				
+
+			</div>
+
+		</section>
+
+
+		<!-- POPULAR ARTISTS SECTION, CLICKING ON ANY ONE OF THEM WILL TAKE YOU TO CHARLIE PUTH'S PAGE -->
+		<section id="artists" class="section-flex">
+			
+			<div class="section-heading">
+				<h1>Popular Artists</h1>
+			</div>
+
+			<div class="flex-display" id="artist-display">
+
+				<div class="artist">
+					<a href="about.html">
+						<div class="artist-images" id="artist-image1">
+							<div class="play">
+								<i class="far fa-play-circle"></i>
+							</div>
+						</div>
+					</a>
+					<p>Charlie Puth</p>
+				</div>
+
+				<div class="artist">
+					<a href="about.html">
+						<div class="artist-images" id="artist-image2">
+							<div class="play">
+								<i class="far fa-play-circle"></i>
+							</div>
+						</div>
+					</a>
+					<p>Arijit Singh</p>
+				</div>
+
+				<div class="artist">
+					<a href="about.html">
+						<div class="artist-images" id="artist-image3">
+							<div class="play">
+								<i class="far fa-play-circle"></i>
+							</div>
+						</div>
+					</a>
+					<p>KK</p>
+				</div>
+
+				<div class="artist">
+					<a href="about.html">
+						<div class="artist-images" id="artist-image4">
+							<div class="play">
+								<i class="far fa-play-circle"></i>
+							</div>
+						</div>
+					</a>
+					<p>Ed Sheeran</p>
+				</div>
+
+				<div class="artist">
+					<a href="about.html">
+						<div class="artist-images" id="artist-image5">
+							<div class="play">
+								<i class="far fa-play-circle"></i>
+							</div>
+						</div>
+					</a>
+					<p>Hardy Sandhu</p>
+				</div>
+
+			</div>
+		</section>
+
+
+
+		<!-- MOOD SECTION BEGINS -->
+		<section id="mood" class="section-flex">
+
+			<div class="section-heading">
+				<h1>Mood</h1>
+			</div>
+			<div class="flex-display" id="mood-display">
+
+				<div class="mood-images" id="mood-image1"></div>
+				<div class="mood-images" id="mood-image2"></div>
+				<div class="mood-images" id="mood-image3"></div>
+				<div class="mood-images" id="mood-image4"></div>
+				<div class="mood-images" id="mood-image5"></div>
+				<div class="mood-images" id="mood-image6"></div>
+				
+			</div>
+
+		</section>
+
+
+
+		<!-- LATEST ENGLISH SONGS SECTION -->
+		<section id="lat-eng">
+			<div class="section-heading">
+				<h1>Latest English</h1>
+			</div>
+
+			<div class="flex-display" class="lat-display">
+
+				<div>
+					<div class="lat-images" id="lat-eng-image-1"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Girls Like You</p>
+						<p class="latest-album-name">Maroon 5</p>
+					</div>
+				</div>
+				
+				<div>
+					<div class="lat-images" id="lat-eng-image-2"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Closer</p>
+						<p class="latest-album-name">Chainsmokers</p>
+					</div>
+				</div>
+				
+				<div>
+					<div class="lat-images" id="lat-eng-image-3"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Sorry</p>
+						<p class="latest-album-name">Justin Bieber</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="lat-images" id="lat-eng-image-2"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Don't let me down</p>
+						<p class="latest-album-name">Chainsmokers</p>
+					</div>
+				</div>
+		
+
+			</div>
+		</section>
+
+
+		<!-- LATEST HINDI SONGS SECTION -->
+		<section id="lat-hin" class="section-flex">
+			<div class="section-heading">
+				<h1>Latest Hindi</h1>
+			</div>
+
+			<div class="flex-display" class="lat-display">
+
+				<div>
+					<div class="lat-images" id="lat-hin-image-1"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Besabriyaan</p>
+						<p class="latest-album-name">M.S Dhoni</p>
+					</div>
+				</div>
+				
+				<div>
+					<div class="lat-images" id="lat-hin-image-2"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Channa Mereya</p>
+						<p class="latest-album-name">Ae Dil hai Mushkil</p>
+					</div>
+				</div>
+				
+				<div>
+					<div class="lat-images" id="lat-hin-image-1"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Kaun Tujhe</p>
+						<p class="latest-album-name">M.S Dhoni</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="lat-images" id="lat-hin-image-2"></div>
+					<div class="song-details">
+						<p class="latest-song-name">Bulleya</p>
+						<p class="latest-album-name">Ae Dil hai Mushkil</p>
+					</div>
+				</div>
+		
+
+			</div>
+		</section>
+
+
+		<!-- MUSIC PLAYER -->
+		<section id="music-player-container">
+
+			<div>
+				<audio controls loop autoplay volume>
+					<source src="audio/gone.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+		</section>
+
+		
+	</main>
+
+
+	<!-- ASIDE SECTIONS BEGINS, ONLY CONSIST QUEUE -->
+	<aside>
+
+		<section id="queue" class="section-flex">
+
+			<div class="queue-heading dropdown">
+				<h1>Queue <i class="fa fa-sort-desc" aria-hidden="true"></i></h1>
+				<!-- DROPDOWN OPTIONS -->
+				<div class="dropdown-content">
+  					<p>Playlists</p>
+  					<p>Favourite Songs</p>
+  				</div>
+			</div>
+
+			<div id="queue-container">
+
+				<div class="song-container-wrapper">
+					<div class="song-container">
+
+						<div class="song-id">1</div>
+						<div class="song-images" id="song-image1"></div>
+						<div class="song-name">Attention</div>
+						<div class="fav-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+
+					</div>
+
+					<div class="horizontal-line"></div>
+				</div>
+
+
+				<div class="song-container-wrapper">
+					<div class="song-container">
+
+						<div class="song-id">2</div>
+						<div class="song-images" id="song-image2"></div>
+						<div class="song-name">Let Me Love You</div>
+						<div class="fav-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+
+					</div>
+
+					<div class="horizontal-line"></div>
+				</div>
+
+
+				<div class="song-container-wrapper">
+					<div class="song-container">
+
+						<div class="song-id">3</div>
+						<div class="song-images" id="song-image3"></div>
+						<div class="song-name">See you again</div>
+						<div class="fav-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+
+					</div>
+
+					<div class="horizontal-line"></div>
+				</div>
+
+
+				<div class="song-container-wrapper">
+					<div class="song-container">
+
+						<div class="song-id">4</div>
+						<div class="song-images" id="song-image1"></div>
+						<div class="song-name">Attention</div>
+						<div class="fav-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+
+					</div>
+
+					<div class="horizontal-line"></div>
+				</div>
+
+				<div class="song-container-wrapper">
+					<div class="song-container">
+
+						<div class="song-id">5</div>
+						<div class="song-images" id="song-image2"></div>
+						<div class="song-name">Let Me Love You</div>
+						<div class="fav-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+
+					</div>
+
+					<div class="horizontal-line"></div>
+				</div>
+
+			</div>			
+			
+		</section>
+		
+	</aside>
+
+</body>
+</html>

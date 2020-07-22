@@ -1,0 +1,347 @@
+
+/*INHERITING STYLES ON BODY AND NAVBAR FROM MAIN STYLESHEET*/
+
+
+/*STYLING ON MAIN SECTION*/
+main
+{
+	position: relative;
+    margin: 24px 0 24px 16px;
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+}
+
+
+
+/*STYLING ON CHARLIE PUTH BOX AND ITS COMPONENTS*/
+
+#artist-bio-container
+{
+	height: 450px;
+	display: flex;
+}
+
+
+#artist-bio-image
+{
+	width: 40%;
+	height: 100%;
+	min-width: 236px;
+	background-image:url('images/charlie-3.jpg');
+	background-size: cover;
+}
+
+#artist-bio-details
+{
+	width: 60%;
+	height: 100%;
+	min-width: 255px;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+
+.artist-bio-name
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.line-spacing
+{
+	line-height: 1.5em;
+}
+
+/*MAIN STYLING ON BOTH BUTTONS*/
+.artist-bio-buttons .button
+{
+  background-color: #413c43;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-family: Comfortaa;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*GRADIENT FOR PLAY ALL BUTTON*/
+.btn-grad 
+{
+	background-image: linear-gradient(to right, #517fa4 0%, #243949 51%, #517fa4 100%)
+}
+
+.btn-grad:hover
+{ 
+	background-position: right center;
+}
+
+
+
+/*STYLING ON CHARLIE PUTH'S PLAYLIST AND ITS COMPONENTS*/
+#artist-playlist-container
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.artist-playlist-song-container
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #252d42;
+	color: #f5f5f6;
+	width: 100%;
+	height: 70px;
+	border-radius: 4px;
+	margin: 20px 0px;
+}
+
+.playlist-song-details,.playlist-song-options
+{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.playlist-song-options
+{
+	margin-right: 20px;
+}
+
+.playlist-song-name,.playlist-song-id,
+.playlist-song-fav,.playlist-song-add
+{
+	font-size: 16px;
+	padding-left: 13px;
+	align-self: center;
+}
+
+.playlist-song-id
+{
+	margin-right: 20px;
+}
+
+.playlist-song-image
+{
+	height: 60px;
+	width: 60px;
+	min-width: 60px;
+	border-radius: 4px;
+	align-self: center;
+}
+
+
+/*PLAYLIST SONG IMAGES*/
+#playlist-song-image-1
+{
+	background-image: url(images/attention.jpg);
+}
+
+#playlist-song-image-2
+{
+	background-image: url(images/let-me-love.jpg);
+}
+
+#playlist-song-image-3
+{
+	background-image: url(images/see-you-again.jpg);
+}
+
+
+.playlist-song-name
+{
+	margin: 0 auto;
+}
+
+.playlist-song-fav
+{
+	margin-right: 10px;
+}
+
+.playlist-song-add
+{
+	cursor: pointer;
+}
+
+.playlist-song-add i:hover
+{
+	color: gray
+}
+
+/*WHITE SHADOW ON PLAYLIST SONG IMAGES*/
+.bx-white 
+{
+    box-shadow: 0px 0px 7px 1px #f5f5f585;
+}
+
+
+/*STYLING ON ASIDE SECTION(SIMILAR ARTISTS)*/
+aside
+{
+	position: absolute;
+    top: 10%; 
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    margin: 24px auto;
+    height: 600px;
+    background-color: #252d42;
+    right: 0px;
+}
+
+#similar-artists-heading
+{
+	padding: 20px 5px 0px;
+    font-weight: 700;
+    color: #f5f5f6;
+    font-size: 15px;
+    width: 100%;
+}
+
+#similar-artists-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	color: #f5f5f6;
+	align-content: space-around;
+	margin-top: 20px;
+}
+
+
+.similar-artist-outer-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+.similar-artist-inner-container
+{
+	display: flex;
+}
+
+/*SERIAL NUMBER OF ARTISTS*/
+.similar-artist-id
+{
+	font-size: 15px;
+	padding-left: 13px;
+	align-self: center;
+	margin-right: 20px;
+}
+
+.similar-artist-image
+{
+	height: 70px;
+	width: 70px;
+	min-width: 50px;
+	border-radius: 4px;
+	background-size: cover;
+}
+
+
+/*SIMILAR ARTIST IMAGES*/
+#similar-artist-image-1
+{
+	background-image: url('images/hardy.jpg');
+}
+
+
+#similar-artist-image-2
+{
+	background-image: url('images/arijit.jpg');
+}
+
+#similar-artist-image-3
+{
+	background-image: url('images/ed.jpg');
+}
+
+.similar-artist-details
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding-left: 20px;
+}
+
+.similar-artist-genre
+{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+
+/*STYLING ON MUSIC PLAYER*/
+#music-player-container
+{
+	padding-bottom: 100px;
+}
+
+#music-player-container audio
+{
+	position: fixed;
+	width: 67%;
+	opacity: 0.7;	
+	bottom: 2%;
+	z-index: 100;
+
+}
+
+/*FONT SIZE OF CHARLIE'S DETAILS AND BUTTONS WILL BECOME SMALL AT BREAKPOINT OF 1290PX*/
+@media only screen and (max-width:  1290px)
+{
+	#artist-bio-details, .artist-bio-buttons .button
+	{
+		font-size: small !important;
+	}
+
+	.artist-bio-buttons .button
+	{
+		padding: 12px 24px !important;
+	}
+
+	.line-spacing
+	{
+		line-height: 1.2em;
+	}
+}
+
+/*SIMILAR ARTIST SECTION WILL FLOAT BELOW THE CHARLIE'S PLAYLIST AT 850PX WIDTH*/
+@media only screen and (max-width: 850px)
+{	
+	aside
+	{
+		position: static;
+	    margin-left: 16px;
+	    display: block;
+	    float: left;
+	    width: 351px;
+	    height: auto;
+	    display: flex;
+	    margin-left: 50px;
+	}
+
+	.similar-artist-inner-container
+	{
+		width: 120%;
+	}
+
+	.similar-artist-inner-container
+	{
+		justify-content: space-around;
+	}
+
+}
